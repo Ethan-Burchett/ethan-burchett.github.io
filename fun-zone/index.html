@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Comic Sans MS', cursive;
-            background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWMzcTlwaGx2dTYxNGtzOTBiMXdmY3Vyajdsem9peGpkY3dhZWJ3OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pAQo6sWAXmHKM/giphy.gif') repeat;
+            background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDhkMXF4a2VncG9icGxwcWw2Z3BxdmlkOTdrejQwd29la3Q3cnBqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ycBeZ7fmviuj15YOJs/giphy.gif') repeat;
             color: yellow;
 
         }
@@ -98,12 +98,48 @@
         .soundcloud-container img {
             margin-right: 10px;
         }
+         .fancy-marquee {
+            font-size: 24px;
+            font-weight: bold;
+            color: yellow;
+            background-color: rgb(13, 202, 35);
+            border: 3px dashed hotpink;
+            padding: 100px;
+            text-shadow: 2px 2px 5px #ff00ff;
+            animation: blink-border 1s infinite alternate;
+        }
+
+        @keyframes blink-border {
+            0% {
+                border-color: hotpink;
+            }
+
+            50% {
+                border-color: cyan;
+            }
+
+            100% {
+                border-color: hotpink;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <marquee class="marquee-text" behavior="scroll" direction="left">✨ WELCOME TO THE FUN ZONE! ✨</marquee>
+    <!-- <marquee class="marquee-text" behavior="scroll" direction="left">✨ WELCOME TO THE FUN ZONE! ✨</marquee>
+    <marquee class="fancy-marquee" behavior="scroll" direction="left">
+        💖 WELCOME TO MY AMAZING WEBSITE!!! CLICK EVERYTHING!!! 🚀🔥✨
+    </marquee> -->
 
+    <div class="glowing-rainbow-box"> the fun zone
+        <br>
+        
+    <marquee class="marquee-text" behavior="scroll" direction="left">✨ WELCOME TO THE FUN ZONE! ✨</marquee>
+        
+    
+    </div>
+
+    
     <div class="glowing-rainbow-box">🎶 MUSIC PLAYER 🎶
         <br>
         <audio controls>
@@ -112,25 +148,7 @@
         </audio>
     </div>
 
-    <!-- <div class="glowing-rainbow-box">🔥 SOUNDCLOUD 🔥
-        <br>
 
-        <div class="soundcloud-container">
-            
-            <a href="https://soundcloud.com/kleen-klosure" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/SoundCloud_Logo.svg/512px-SoundCloud_Logo.svg.png"
-                    alt="SoundCloud Logo" width="40">
-            </a>
-
-            
-            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/https://soundcloud.com/kleen-klosure/junky-volcas-long-15-phone&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
-            </iframe>
-        </div>
-
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/https://soundcloud.com/kleen-klosure/junky-volcas-long-15-phone"></iframe>
-    </div> -->
 
     <div class="glowing-rainbow-box">🔥 SOUNDCLOUD 🔥
         <br>
