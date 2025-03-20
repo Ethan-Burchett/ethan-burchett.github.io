@@ -7,6 +7,7 @@
     <title>Personal Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+   
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -26,6 +27,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            animation: spin 4s linear infinite;
         }
 
         header p {
@@ -92,43 +94,56 @@
         <a href="#education">Education</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-        <a href="#other">Other</a>
+        <a href="#fun-zone">Fun Zone</a>
     </nav>
 
     <div class="container">
 
         <section id="work" class="section">
             <h2>Work</h2>
-            <p>I am a software engineer with one year of production experience at New Relic. </p>
-            <p>
-                I had a great internship experience on the Software Architecture team. Eventually I moved full time to
-                the Engineering Operations team where I contributed to maintaining a cluster of microservice
-                applications using Node.js and Ruby on Rails.
-            </p>
+            <p><b>Hi all!</b> I’m a Software Engineer currently completing my B.S. in Computer Science at Arizona State University.
+            Previously, I worked at New Relic as a backend engineer, where I built cloud microservices in Node.js and Ruby on Rails.
+            My team, Engineering Operations, focused on developing tools to facilitate active incident management.</p>
+            
+            <p><b>New Relic:</b> Software Engineer -- May 2023 -> April 2024 </p>
+            <ul>
+                <li>Node.js, Ruby on Rails </li>
+                <li>Terraform, CI/CD, Argo, Jenkins</li>
+                <li>JavaScript, TypeScript, Ruby</li>
+                <li>PostgreSQL, NRQL (New Relic Query Language), GraphQL</li>
+                <li>Contributed code to our incident management pipeline. Created new GraphQL endpoints and stitched them into company NerdGraph GraphQL API for both internal and external use. </li>
+                <li>Revamped documentation and runbooks across our microservices and created detailed software architecture diagrams using Mermaid.js.</li>
+                <li>Refactored our team alerting tooling using the New Relic platform with Terraform to better match our SLO and SLI targets.</li>
+                <li>Updated paging rules for senior executives for service outages using PagerDuty during severe incidents.</li>
+            </ul>
+            <p><b>New Relic:</b> Intern Software Engineer -> Summer 2022 </p>
+            <ul>
+                <li>Node.js, JavaScript </li>
+                <li>Docker, GitHub SDK, Slack SDK</li>
+                <li>Built a Slackbot using Node.js and SDK's from GitHub and Slack that automated and logged GitHub permissions for top level repositories. This reduced toil from senior software architects. </li>
+            
+            
+            </ul>
 
-            <p>
-                Engineering Operations built tools for internal incident management, an application for managing
-                engineering team project ownership and monitoring internal service health. During my time, I contributed
-                to new features on our internal incident management Slackbot.
-            </p>
-            </p>
-            Early in my career, I am an advocate for building better documentation. Over a several month period, I was
-            able to
-            revamp our existing documentation and create Mermaid.js diagrams for each of our microservices. This was
-            immensely
-            helpful when onboarding new engineers and showing leadership our software architecture and possible
-            bottlenecks.
-            <p>
+           
         </section>
 
         <section id="education" class="section">
             <h2>Education</h2>
-            <p>Washington State University: Computer Science B.S. 2019 -> 2023 </p>
+            <p><b>Washington State University:</b> Computer Science B.S. 2019 -> 2023 </p>
             <ul>
                 <li>Biology, Chemistry, Physics </li>
                 <li>Operating Systems, Theory of Computation</li>
                 <li>C/C++, Linux</li>
                 <li>Software Engineering</li>
+            </ul>
+            <p><b>Arizona State University:</b>  Computer Science B.S. 2024 -> 2026 expected </p>
+            <ul>
+                <li>Java, Algorithm Analysis</li>
+                <li>Security, Information Assurance</li>
+                <li>Linear Algebra, Logic Programming</li>
+                <li>Digital Design, Systems Programming, Computer Architecture</li>
+    
             </ul>
         </section>
 
@@ -151,8 +166,8 @@
             
         </section>
 
-        <section id="other" class="section">
-            <h2>Other Content</h2>
+        <section id="fun-zone" class="section">
+            <h2>the fun zone</h2>
             <p>raylib</p>
             <p>soundcloud</p>
         </section>
