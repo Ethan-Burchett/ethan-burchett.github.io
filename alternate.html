@@ -7,7 +7,6 @@
     <title>Personal Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-   
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -69,6 +68,74 @@
             font-weight: 700;
         }
 
+        .section h3 {
+            margin-top: 0;
+            color: #0f8d2d;
+            font-weight: 700;
+        }
+
+
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+
+            20% {
+                color: orange;
+            }
+
+            40% {
+                color: yellow;
+            }
+
+            60% {
+                color: green;
+            }
+
+            80% {
+                color: blue;
+            }
+
+            100% {
+                color: purple;
+            }
+        }
+
+        @keyframes blink-border {
+            0% {
+                border-color: hotpink;
+            }
+
+            50% {
+                border-color: cyan;
+            }
+
+            100% {
+                border-color: hotpink;
+            }
+        }
+
+        .glowing-rainbow-marquee {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #BFDBF7;
+            border: 3px dashed hotpink;
+            padding: 10px;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            animation: rainbow 2s infinite, blink-border 1s infinite alternate;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .glowing-rainbow-marquee:hover {
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+            font-size: 20px;
+            /* Make text bigger */
+            border-color: yellow;
+            /* Change border color */
+            background-color: black;
+            /* Switch up the background */
+        }
+
         footer {
             text-align: center;
             padding: 2em 0;
@@ -77,8 +144,6 @@
             margin-top: 2em;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        
     </style>
 </head>
 
@@ -94,38 +159,46 @@
         <a href="#education">Education</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-        <a href="#fun-zone">Fun Zone</a>
+        <!-- <a href="#fun-zone">Fun Zone</a> -->
     </nav>
 
     <div class="container">
 
         <section id="work" class="section">
             <h2>Work</h2>
-            <p><b>Hi all!</b> I’m a Software Engineer currently completing my B.S. in Computer Science at Arizona State University.
-            Previously, I worked at New Relic as a backend engineer, where I built cloud microservices in Node.js and Ruby on Rails.
-            My team, Engineering Operations, focused on developing tools to facilitate active incident management.</p>
-            
+            <p><b>Hi all!</b> I’m a Software Engineer currently completing my B.S. in Computer Science at Arizona State
+                University.
+                Previously, I worked at New Relic as a backend engineer, where I built cloud microservices in Node.js
+                and Ruby on Rails.
+                My team, Engineering Operations, focused on developing tools to facilitate active incident management.
+            </p>
+
             <p><b>New Relic:</b> Software Engineer -- May 2023 -> April 2024 </p>
             <ul>
                 <li>Node.js, Ruby on Rails </li>
                 <li>Terraform, CI/CD, Argo, Jenkins</li>
                 <li>JavaScript, TypeScript, Ruby</li>
                 <li>PostgreSQL, NRQL (New Relic Query Language), GraphQL</li>
-                <li>Contributed code to our incident management pipeline. Created new GraphQL endpoints and stitched them into company NerdGraph GraphQL API for both internal and external use. </li>
-                <li>Revamped documentation and runbooks across our microservices and created detailed software architecture diagrams using Mermaid.js.</li>
-                <li>Refactored our team alerting tooling using the New Relic platform with Terraform to better match our SLO and SLI targets.</li>
-                <li>Updated paging rules for senior executives for service outages using PagerDuty during severe incidents.</li>
+                <li>Contributed code to our incident management pipeline. Created new GraphQL endpoints and stitched
+                    them into company NerdGraph GraphQL API for both internal and external use. </li>
+                <li>Revamped documentation and runbooks across our microservices and created detailed software
+                    architecture diagrams using Mermaid.js.</li>
+                <li>Refactored our team alerting tooling using the New Relic platform with Terraform to better match our
+                    SLO and SLI targets.</li>
+                <li>Updated paging rules for senior executives for service outages using PagerDuty during severe
+                    incidents.</li>
             </ul>
             <p><b>New Relic:</b> Intern Software Engineer -> Summer 2022 </p>
             <ul>
                 <li>Node.js, JavaScript </li>
                 <li>Docker, GitHub SDK, Slack SDK</li>
-                <li>Built a Slackbot using Node.js and SDK's from GitHub and Slack that automated and logged GitHub permissions for top level repositories. This reduced toil from senior software architects. </li>
-            
-            
+                <li>Built a Slackbot using Node.js and SDK's from GitHub and Slack that automated and logged GitHub
+                    permissions for top level repositories. This reduced toil from senior software architects. </li>
+
+
             </ul>
 
-           
+
         </section>
 
         <section id="education" class="section">
@@ -137,13 +210,13 @@
                 <li>C/C++, Linux</li>
                 <li>Software Engineering</li>
             </ul>
-            <p><b>Arizona State University:</b>  Computer Science B.S. 2024 -> 2026 expected </p>
+            <p><b>Arizona State University:</b> Computer Science B.S. 2024 -> 2026 expected </p>
             <ul>
                 <li>Java, Algorithm Analysis</li>
                 <li>Security, Information Assurance</li>
                 <li>Linear Algebra, Logic Programming</li>
                 <li>Digital Design, Systems Programming, Computer Architecture</li>
-    
+
             </ul>
         </section>
 
@@ -151,42 +224,55 @@
             <h2>Portfolio</h2>
             <p>Here are some of the projects I've worked on:</p>
             <ul>
-                <li>Home Assistant </li>
-                <li>I am interested in music production and synthesizers for experimental sound design.</li>
+                <li>Raspberry Pi Home Assistant  </li>
+                <li>This website</li>
 
             </ul>
         </section>
 
         <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>If you'd like to get in touch, please email me at <a
+            <p>Send me an email! --> <a
                     href="mailto:ethanburchett@gmail.com">ethanburchett@gmail.com</a></p>
-            
 
-            
         </section>
 
-        <section id="fun-zone" class="section">
-            <h2>the fun zone</h2>
+        <!-- <section id="fun-zone" class="section">
+            
+            <h3>The Fun Zone</h3>
             <p>raylib</p>
             <p>soundcloud</p>
-        </section>
+        </section> -->
 
     </div>
 
+    <!-- <marquee class="glowing-rainbow-marquee" behavior="scroll" direction="left">
+        ✨✨ FUN ZONE
+        <a href="https://www.ethanburchett.com\fun-zone">
+            CLICK HERE
+        </a>
+        FUN ZONE ✨✨
+    </marquee> -->
+
     <footer>
         <a href="https://github.com/Ethan-Burchett" target="_blank">
-            <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub Logo"
-                width="40" height="40">
+            <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub Logo" width="40" height="40">
         </a>
 
         <a href="https://www.linkedin.com/in/ethan-burchett-479a9919a/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-             alt="LinkedIn Logo" width="40" height="40">
+                alt="LinkedIn Logo" width="40" height="40">
         </a>
-        
+
         <p>2025 Ethan Burchett</p>
     </footer>
+    <marquee class="glowing-rainbow-marquee" behavior="scroll" direction="left">
+        ✨✨ FUN ZONE
+        <a href="https://www.ethanburchett.com\fun-zone">
+            CLICK HERE
+        </a>
+        FUN ZONE ✨✨
+    </marquee>
 
 </body>
 

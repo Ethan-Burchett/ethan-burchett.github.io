@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retro Website</title>
+    <style>
+        .fancy-marquee {
+            font-size: 24px;
+            font-weight: bold;
+            color: yellow;
+            background-color: rgb(13, 202, 35);
+            border: 3px dashed hotpink;
+            padding: 100px;
+            text-shadow: 2px 2px 5px #ff00ff;
+            animation: blink-border 1s infinite alternate;
+        }
+
+        @keyframes blink-border {
+            0% {
+                border-color: hotpink;
+            }
+
+            50% {
+                border-color: cyan;
+            }
+
+            100% {
+                border-color: hotpink;
+            }
+        }
+
+        .fancy-marquee:hover {
+            text-shadow: 0 0 10px #00ff6e, 0 0 20px #005eff, 0 0 30px #e1ff00;
+            /* font-size: 30px; */
+
+        }
+
+
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+
+            20% {
+                color: orange;
+            }
+
+            40% {
+                color: yellow;
+            }
+
+            60% {
+                color: green;
+            }
+
+            80% {
+                color: blue;
+            }
+
+            100% {
+                color: purple;
+            }
+        }
+
+        @keyframes blink-border {
+            0% {
+                border-color: hotpink;
+            }
+
+            50% {
+                border-color: cyan;
+            }
+
+            100% {
+                border-color: hotpink;
+            }
+        }
+
+        .glowing-rainbow-marquee {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: purple;
+            border: 3px dashed hotpink;
+            padding: 10px;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            animation: rainbow 2s infinite, blink-border 1s infinite alternate;
+        }
+
+
+        @keyframes rainbow {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: purple; }
+}
+
+@keyframes blink-border {
+  0% { border-color: hotpink; }
+  50% { border-color: cyan; }
+  100% { border-color: hotpink; }
+}
+
+.glowing-rainbow-marquee {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: purple;
+  border: 3px dashed hotpink;
+  padding: 10px;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  animation: rainbow 2s infinite, blink-border 1s infinite alternate;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 On Hover: Make it glow even brighter & change shadow color! */
+.glowing-rainbow-marquee:hover {
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+  font-size: 28px; /* Make text bigger */
+  border-color: yellow; /* Change border color */
+  background-color: black; /* Switch up the background */
+}
+    </style>
+</head>
+
+<body>
+
+    <marquee class="fancy-marquee" behavior="scroll" direction="left">
+        💖 WELCOME TO MY AMAZING WEBSITE!!! CLICK EVERYTHING!!! 🚀🔥✨
+    </marquee>
+    <marquee class="glowing-rainbow-marquee" behavior="scroll" direction="left">
+        🌈✨ WELCOME TO MY SUPER EPIC WEBSITE!!! 🚀🔥 CLICK EVERYTHING!!! 💖💾
+    </marquee>
+    <marquee class="glowing-rainbow-marquee" behavior="scroll" direction="left">
+        🌈✨ WELCOME TO MY SUPER EPIC WEBSITE!!! 🚀🔥 CLICK EVERYTHING!!! 💖💾
+    </marquee>
+
+    <!-- <marquee class="glow" behavior="scroll" direction="left">
+            <a href="https://www.ethanburchett.com" >
+                ✨CLICK HERE FOR THE FUN ZONE✨🌈✨💖💜💙💚💛🖤💔💥🔥🌟⭐⚡🎉🎊🎶🎵🎤🎧🎹
+            </a>
+        </marquee>
+        <tt>THIS LOOKS LIKE IT'S TYPED ON A TERMINAL!!! 💾🖥️</tt>
+       
+        <p class="glow">✨ LOOK AT THIS BEAUTIFUL GLOW!!! ✨</p>
+        <p class="rainbow-text">🌈 RAINBOW TEXT GO BRRRR!!! 🌈</p>
+    
+    
+        <marquee class="fancy-marquee" behavior="scroll" direction="left">
+            💖 WELCOME TO MY AMAZING WEBSITE!!! CLICK EVERYTHING!!! 🚀🔥✨
+        </marquee> -->
+
+</body>
+
+</html>
