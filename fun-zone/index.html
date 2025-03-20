@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun zone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWMzcTlwaGx2dTYxNGtzOTBiMXdmY3Vyajdsem9peGpkY3dhZWJ3OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pAQo6sWAXmHKM/giphy.gif') repeat;
+            color: yellow;
+
+        }
+
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+
+            20% {
+                color: orange;
+            }
+
+            40% {
+                color: yellow;
+            }
+
+            60% {
+                color: green;
+            }
+
+            80% {
+                color: blue;
+            }
+
+            100% {
+                color: purple;
+            }
+        }
+
+        @keyframes blink-border {
+            0% {
+                border-color: hotpink;
+            }
+
+            50% {
+                border-color: cyan;
+            }
+
+            100% {
+                border-color: hotpink;
+            }
+        }
+
+        .glowing-rainbow-box {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+            border: 5px dashed hotpink;
+            padding: 15px;
+            margin: 20px;
+            animation: rainbow 2s infinite, blink-border 1s infinite alternate;
+        }
+
+        .marquee-text {
+            font-size: 24px;
+            animation: rainbow 2s infinite;
+        }
+
+        .iframe-container {
+            width: 80%;
+            margin: auto;
+            background: black;
+            padding: 15px;
+            border: 5px solid cyan;
+        }
+
+        .blog-section {
+            background: black;
+            padding: 15px;
+            border: 5px solid lime;
+            margin: 20px;
+        }
+
+        .soundcloud-container {
+            display: flex;
+            align-items: center;
+            background: black;
+            padding: 10px;
+            border: 3px dashed orange;
+            width: 350px;
+            /* Adjust as needed */
+            margin: auto;
+        }
+
+        .soundcloud-container img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee class="marquee-text" behavior="scroll" direction="left">✨ WELCOME TO THE FUN ZONE! ✨</marquee>
+
+    <div class="glowing-rainbow-box">🎶 MUSIC PLAYER 🎶
+        <br>
+        <audio controls>
+            <source src="synth-kleen-klosure.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- <div class="glowing-rainbow-box">🔥 SOUNDCLOUD 🔥
+        <br>
+
+        <div class="soundcloud-container">
+            
+            <a href="https://soundcloud.com/kleen-klosure" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/SoundCloud_Logo.svg/512px-SoundCloud_Logo.svg.png"
+                    alt="SoundCloud Logo" width="40">
+            </a>
+
+            
+            <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/https://soundcloud.com/kleen-klosure/junky-volcas-long-15-phone&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
+            </iframe>
+        </div>
+
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/https://soundcloud.com/kleen-klosure/junky-volcas-long-15-phone"></iframe>
+    </div> -->
+
+    <div class="glowing-rainbow-box">🔥 SOUNDCLOUD 🔥
+        <br>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1850582061&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div
+        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/kleen-klosure" title="kleen klosure" target="_blank"
+            style="color: #cccccc; text-decoration: none;">kleen klosure</a> · <a
+            href="https://soundcloud.com/kleen-klosure/junky-volcas-long-15-phone"
+            title="Junky - Volcas - Long - 15 - phone" target="_blank" style="color: #cccccc; text-decoration: none;">Junky
+            - Volcas - Long - 15</a></div>
+        
+    
+    </div>
+    
+
+    <div class="glowing-rainbow-box">🕹️ WEB ASSEMBLY GAME DEMO 🕹️
+        <br>
+        <div class="iframe-container">
+            <iframe src="your-wasm-game.html" width="800" height="600"></iframe>
+        </div>
+
+        <a href="https://github.com/Ethan-Burchett/wabbit-raylib-demo">Source</a>
+
+    </div>
+
+    <div class="blog-section">📜 MINI BLOG 📜
+        <br>
+        <p>Welcome to the fun-zone! Here I share my latest projects, thoughts on programming, and cool experiments.</p>
+        <p><b>March 2025:</b> Just finished setting up the Fun Zone! More cool things coming soon. Stay tuned!
+        </p>
+    </div>
+</body>
+
+</html>
